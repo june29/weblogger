@@ -62,8 +62,8 @@ bookmarks_text =
 
 template = <<~TEMPLATE
 ```
-#{date} のウェブログ
-##{date} #weblog
+weblog #{date}
+#weblog ##{date}
 
 [*** ブックマーク]
 
@@ -72,7 +72,7 @@ template = <<~TEMPLATE
 [*** 思ったこと・感じたこと]
 
 
-[#{date - 1} のウェブログ] ←前日 | 今月 ##{date.strftime("%Y-%m")} | 翌日→ [#{date + 1} のウェブログ]
+[weblog #{date - 1}] ←前日 | 今月 ##{date.strftime("%Y-%m")} | 翌日→ [weblog #{date + 1}]
 ```
 TEMPLATE
 
