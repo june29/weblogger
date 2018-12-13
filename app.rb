@@ -72,7 +72,12 @@ weblog #{date}
 [*** 思ったこと・感じたこと]
 
 
-[weblog #{date - 1}] ←前日 | 今月 ##{date.strftime("%Y-%m")} | 翌日→ [weblog #{date + 1}]
+[*** リンク]
+
+前日 : [weblog #{date - 1}]
+翌日 : [weblog #{date + 1}]
+同日 : ##{date.strftime("%m月%d日")}
+今月 : ##{date.strftime("%Y年%m月")}
 ```
 TEMPLATE
 
